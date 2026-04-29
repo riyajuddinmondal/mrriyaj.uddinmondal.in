@@ -69,13 +69,14 @@
         }
 
          .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 30px;
-            border: 3px solid white;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            width: 180px; /* Scaled for web balance while maintaining 1:1 ratio */
+            height: 180px;
+            margin-bottom: 25px;
+            display: block;
+            border-radius: 15px; /* Optional slight roundness on the corners */
+            object-fit: contain; /* Ensures the whole 699x699 image is visible and unobstructed */
+            border: none; /* No border box */
+            background: transparent; /* No background box */
         }
         
         .btn {
